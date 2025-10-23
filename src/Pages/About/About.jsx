@@ -16,7 +16,7 @@ const About = () => {
       <section className="py-16 px-6 lg:px-12">
         <div className="container mx-auto flex  flex-col-reverse px-6 lg:px-12 lg:flex-row gap-10 items-center">
           <div>
-            <h1 className="text-3xl md:text-5xl font-extrabold text-primary ">
+            <h1 className="text-3xl md:text-5xl font-extrabold text-primary text-center lg:text-left">
               About Us
             </h1>
             <p className="mt-4 lg:text-lg ">
@@ -104,7 +104,7 @@ const About = () => {
 
       {/* CORE VALUES */}
       <section className="py-12 ">
-        <div className="container mx-auto flex gap-6 px-6 lg:px-12">
+        <div className="container mx-auto flex flex-col md:flex-row gap-6 px-6 lg:px-12">
           {/* Card1 */}
           <div className="p-6 border-t-4 border-primary hover:-translate-y-1 text-center group card w-full shadow-lg rounded-lg overflow-hidden transform transition-all duration-300 hover:shadow-2xl bg-base-300/70 ">
             <div className="flex justify-center mb-4">
@@ -162,7 +162,7 @@ const About = () => {
           <h3 className="text-2xl font-bold text-center text-primary mb-8">
             Meet the Team
           </h3>
-          <div className="flex flex-col justify-center lg:flex-row mx-auto gap-6 px-6 lg:px-12 ">
+          <div className="flex flex-col md:flex-row mx-auto justify-center gap-6 px-6 lg:px-12 ">
             {[
               {
                 name: "Siddikur Rahman",
@@ -180,18 +180,33 @@ const About = () => {
                 img: "https://omarfaruk-dev.web.app/omar-photo.png",
               },
             ].map((m) => (
-              <div
-                key={m.name}
-                className="text-center bg-base-200 rounded-lg p-6 w-72 shadow-md hover:shadow-lg transform transition-all duration-300 "
-              >
-                <img
-                  src={m.img}
-                  alt={m.name}
-                  className="w-28 h-28 mx-auto rounded-full object-cover border-2 border-base-100"
-                />
-                <h4 className="mt-4 font-semibold">{m.name}</h4>
-                <p className="text-sm text-base-content/70">{m.role}</p>
-              </div>
+              <>
+                <div
+                  key={m.name}
+                  className="p-6  hover:-translate-y-1 text-center group card w-full shadow-lg rounded-lg overflow-hidden transform transition-all duration-300 hover:shadow-2xl bg-base-300/70 "
+                >
+                  <img
+                    src={m.img}
+                    alt={m.name}
+                    className="w-28 h-28 mx-auto rounded-full object-cover border-2 border-base-100"
+                  />
+                  <h4 className="mt-4 font-semibold">{m.name}</h4>
+                  <p className="text-sm text-base-content/70">{m.role}</p>
+                </div>
+                {/*  */}
+                {/* <div
+                  key={m.name}
+                  className="text-center bg-base-200 rounded-lg p-6 w-72 shadow-md hover:shadow-lg transform transition-all duration-300 "
+                >
+                  <img
+                    src={m.img}
+                    alt={m.name}
+                    className="w-28 h-28 mx-auto rounded-full object-cover border-2 border-base-100"
+                  />
+                  <h4 className="mt-4 font-semibold">{m.name}</h4>
+                  <p className="text-sm text-base-content/70">{m.role}</p>
+                </div> */}
+              </>
             ))}
           </div>
         </div>
