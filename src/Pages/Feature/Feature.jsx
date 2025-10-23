@@ -8,7 +8,7 @@ const Feature = () => {
       {/* Helmet */}
       <title>Feature - Toy Universe</title>
       {/* Features Section */}
-      <section className="py-20 px-4 sm:px-6 lg:px-10">
+      <section className="py-20 px-4 sm:px-6 lg:px-10 container mx-auto">
         <div className="text-center mb-12">
           <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-primary mb-4">
             Why
@@ -79,7 +79,7 @@ const Feature = () => {
       {/*  */}
       {/* Faq */}
       <section className="py-16 px-4 sm:px-6 lg:px-10 bg-base-100  transition-all duration-300">
-        <div className="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-10 items-center">
+        <div className="container mx-auto grid grid-cols-1 lg:grid-cols-2 gap-10 items-center">
           {/* Left Side Image */}
           <div className="flex justify-center">
             <img

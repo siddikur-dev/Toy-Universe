@@ -17,7 +17,7 @@ const Slider = () => {
 
   return (
     <div className="w-full bg-gradient-to-r from-[var(--color-primary)] to-[var(--color-secondary)] py-14">
-      <h2 className=" text-3xl  md:text-4xl text-center font-bold mb-10">
+      <h2 className=" text-3xl  md:text-4xl lg:text-5xl text-center font-bold mb-10">
         🧩 Our Top Toys
       </h2>
 

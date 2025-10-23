@@ -31,7 +31,7 @@ const Profile = () => {
   };
 
   return (
-    <section className="min-h-screen bg-base-200 py-12 px-4 flex justify-center items-center">
+    <section className="min-h-[80vh] bg-base-200 py-12 px-4 flex justify-center items-center">
       <title>Profile - Toy Universe</title>
       <div className="bg-base-100 shadow-xl rounded-2xl w-full max-w-3xl overflow-hidden">
         {/* Top Cover / Banner */}
