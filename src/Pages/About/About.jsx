@@ -1,4 +1,5 @@
 import React from "react";
+import CountUp from "react-countup";
 import {
   FaCheckCircle,
   FaRocket,
@@ -43,25 +44,35 @@ const About = () => {
 
             <div className="mt-8 grid grid-cols-2 sm:grid-cols-4 gap-4">
               <div className="flex flex-col items-start">
-                <span className="text-3xl font-bold text-primary">500+</span>
+                <span className="text-3xl font-bold text-primary">
+                  <CountUp end={500} delay={1} />+
+                </span>
                 <span className="text-sm text-base-content/70">
                   Toys curated
                 </span>
               </div>
               <div className="flex flex-col items-start">
-                <span className="text-3xl font-bold text-primary">200+</span>
+                <span className="text-3xl font-bold text-primary">
+                  <CountUp end={200} delay={1} />+
+                </span>
                 <span className="text-sm text-base-content/70">
                   Local sellers
                 </span>
               </div>
               <div className="flex flex-col items-start">
-                <span className="text-3xl font-bold text-primary">99%</span>
+                <span className="text-3xl font-bold text-primary">
+                  <CountUp end={99} delay={1} />%
+                </span>
                 <span className="text-sm text-base-content/70">
                   Safety checked
                 </span>
               </div>
               <div className="flex flex-col items-start">
-                <span className="text-3xl font-bold text-primary">24/7</span>
+                <span className="text-3xl font-bold text-primary">
+                  <CountUp end={24} delay={2} />
+                  /
+                  <CountUp end={7} delay={1} />
+                </span>
                 <span className="text-sm text-base-content/70">Support</span>
               </div>
             </div>
@@ -155,18 +166,18 @@ const About = () => {
             {[
               {
                 name: "Siddikur Rahman",
-                role: "FrontEnd  Dev",
+                role: "FrontEnd  Developer",
                 img: "https://i.ibb.co.com/TDp6G39f/profile-pic.png",
               },
               {
-                name: "navy",
-                role: "UI/UX Designer",
-                img: "https://i.pravatar.cc/150?img=5",
+                name: "Shihab Uddin",
+                role: "MernStack Developer ",
+                img: "https://shihab-dev.web.app/assets/shihab-CsqGrpwH.jpg",
               },
               {
-                name: "John",
-                role: "Content & QA",
-                img: "https://i.pravatar.cc/150?img=12",
+                name: "Omar Faruk",
+                role: "Backend Developer & Ui/Ux Expert",
+                img: "https://omarfaruk-dev.web.app/omar-photo.png",
               },
             ].map((m) => (
               <div
