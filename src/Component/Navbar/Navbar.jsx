@@ -154,10 +154,10 @@ const Navbar = () => {
             </li>
             <li>
               <NavLink
-                to="/my-toys"
+                to="/feature"
                 className="text-base-content hover:text-primary/75 hover:bg-base-200"
               >
-                My Toys
+                Feature 
               </NavLink>
             </li>
             <li>

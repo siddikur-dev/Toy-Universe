@@ -1,6 +1,8 @@
 import React from "react";
 import AllToys from "../../Component/Toys/AllToys";
 import Slider from "../../Component/Slider/Slider";
+import Review from "../Review/Review";
+import Newsletter from "../Newsletter/Newsletter";
 
 const Home = () => {
   return (
@@ -9,6 +11,8 @@ const Home = () => {
 
       {/*  */}
       <AllToys></AllToys>
+      <Review />
+      <Newsletter></Newsletter>
     </div>
   );
 };

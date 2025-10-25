@@ -34,11 +34,11 @@ const About = () => {
                 Visit Toy Universe
               </Link>
               <Link
-                to="/features"
+                to="/feature"
                 className="btn btn-primary btn-outline border border-primary "
                 aria-label="See features"
               >
-                Learn more
+                Feature
               </Link>
             </div>
 
