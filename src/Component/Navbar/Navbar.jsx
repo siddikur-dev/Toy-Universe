@@ -58,6 +58,12 @@ const Navbar = () => {
           >
             Feature
           </NavLink>
+          <NavLink
+            to="/contact"
+            className="text-base font-medium text-base-content    hover:text-primary/75"
+          >
+            Contact
+          </NavLink>
 
           {user && (
             <NavLink

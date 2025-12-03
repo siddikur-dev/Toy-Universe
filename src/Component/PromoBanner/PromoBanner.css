@@ -1,0 +1,36 @@
+/* Small promo banner styles; project uses Tailwind/daisyUI for main styling */
+.promo-banner {
+  background: linear-gradient(90deg, rgba(59,130,246,0.04), rgba(99,102,241,0.02));
+  border: 1px solid rgba(99,102,241,0.06);
+}
+
+.promo-inner .countdown-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 0.75rem;
+}
+
+.time-box {
+  background: rgba(255,255,255,0.04);
+  border-radius: 0.5rem;
+  padding: 0.75rem;
+  text-align: center;
+  border: 1px solid rgba(0,0,0,0.04);
+}
+
+.time-value {
+  font-weight: 700;
+  font-size: 1.25rem;
+  color: var(--tw-prose-headings, #0f172a);
+}
+
+.time-label {
+  font-size: 0.75rem;
+  color: rgba(15,23,42,0.6);
+}
+
+@media (max-width: 768px) {
+  .promo-inner .countdown-grid {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+}
