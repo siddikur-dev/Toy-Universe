@@ -1,0 +1,12 @@
+/* Minimal extra rules for the Contact page. Project uses Tailwind/daisyUI */
+.contact-card {
+  /* keep a little backdrop blur on supported browsers */
+  backdrop-filter: blur(4px);
+}
+
+/* small responsive tweaks */
+@media (max-width: 640px) {
+  .contact-card {
+    padding: 1rem !important;
+  }
+}

@@ -11,6 +11,7 @@ import ToyCardDetails from "../../Component/Toys/ToyCardDetails/ToyCardDetails";
 import Feature from "../../Pages/Feature/Feature";
 import ResetPass from "../../Component/AuthRegLogin/ResetPass/ResetPass";
 import About from "../../Pages/About/About";
+import Contact from "../../Pages/Contact/Contact";
 
 const router = createBrowserRouter([
   {
@@ -35,11 +36,7 @@ const router = createBrowserRouter([
       },
       {
         path: "/toy-details/:id",
-        element: (
-          <PrivateRoute>
-            <ToyCardDetails />
-          </PrivateRoute>
-        ),
+        element: <ToyCardDetails />,
       },
 
       {
@@ -55,12 +52,12 @@ const router = createBrowserRouter([
         Component: ResetPass,
       },
       {
+        path: "/contact",
+        Component: Contact,
+      },
+      {
         path: "/feature",
-        element: (
-          <PrivateRoute>
-            <Feature />
-          </PrivateRoute>
-        ),
+        element: <Feature />,
       },
     ],
   },
