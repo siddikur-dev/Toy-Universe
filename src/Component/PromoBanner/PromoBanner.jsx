@@ -40,10 +40,10 @@ const PromoBanner = ({ targetDate }) => {
           </p>
 
           <div className="mt-6 flex gap-4 items-center">
-            <Link to="/feature" className="btn btn-primary btn-lg">
+            <Link to="/feature" className="btn btn-primary ">
               Shop Now
             </Link>
-            <Link to="/all-toys" className="btn btn-ghost">
+            <Link to="/all-toys" className="btn btn-primary btn-outline ">
               Browse all toys
             </Link>
           </div>
@@ -56,7 +56,7 @@ const PromoBanner = ({ targetDate }) => {
             <TimeBox value={remaining.minutes} label="Mins" />
             <TimeBox value={remaining.seconds} label="Secs" />
           </div>
-          <div className="mt-3 text-sm text-base-content/70">Offer ends soon — hurry up!</div>
+          <div className="mt-3 text-sm ">Offer ends soon — hurry up!</div>
         </div>
       </div>
     </section>

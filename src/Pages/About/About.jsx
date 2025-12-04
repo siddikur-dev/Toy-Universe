@@ -167,12 +167,12 @@ const About = () => {
               {
                 name: "Siddikur Rahman",
                 role: "FrontEnd  Developer",
-                img: "https://i.ibb.co.com/TDp6G39f/profile-pic.png",
+                img: "https://avatars.githubusercontent.com/u/187284559?v=4",
               },
               {
                 name: "Shihab Uddin",
                 role: "MernStack Developer ",
-                img: "https://shihab-dev.web.app/assets/shihab-CsqGrpwH.jpg",
+                img: "https://shihab-dev.web.app/_next/static/media/shihab.4f9f0e13.png",
               },
               {
                 name: "Omar Faruk",
