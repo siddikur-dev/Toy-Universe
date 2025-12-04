@@ -46,6 +46,12 @@ const Navbar = () => {
           </NavLink>
 
           <NavLink
+            to="/all-toys"
+            className="text-base font-medium text-base-content    hover:text-primary/75"
+          >
+            All Toys
+          </NavLink>
+          <NavLink
             to="/about"
             className="text-base font-medium text-base-content    hover:text-primary/75"
           >

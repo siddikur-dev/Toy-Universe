@@ -12,6 +12,8 @@ import Feature from "../../Pages/Feature/Feature";
 import ResetPass from "../../Component/AuthRegLogin/ResetPass/ResetPass";
 import About from "../../Pages/About/About";
 import Contact from "../../Pages/Contact/Contact";
+import AllToys from "../../Component/Toys/AllToys";
+import AllToy from "../../Component/Toys/AllToy";
 
 const router = createBrowserRouter([
   {
@@ -33,6 +35,10 @@ const router = createBrowserRouter([
       {
         path: "/register",
         Component: Register,
+      },
+      {
+        path: "/all-toys",
+        Component: AllToy,
       },
       {
         path: "/toy-details/:id",

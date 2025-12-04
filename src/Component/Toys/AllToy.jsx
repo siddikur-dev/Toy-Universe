@@ -1,14 +1,10 @@
-import React, { useState } from "react";
+import React from "react";
 import useToys from "../../hook/useToys";
 import ToyCard from "./ToyCard/ToyCard";
 import { HashLoader } from "react-spinners";
-import { Link } from "react-router";
 
-const AllToys = () => {
+const AllToy = () => {
   const { toys, loading } = useToys();
-
-  const [showAll, setShowAll] = useState(false);
-  // click  show all / show less
 
   if (loading) {
     return (
@@ -18,8 +14,6 @@ const AllToys = () => {
     );
   }
 
-  // initial showing fast 6 data
-  const toysToShow = showAll ? toys : toys.slice(0, 8);
   return (
     <section className="py-16 bg-base-200">
       <div className="container mx-auto px-4">
@@ -30,19 +24,13 @@ const AllToys = () => {
         </div>
         {/* Map All Toys  */}
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5">
-          {toysToShow.map((toy) => (
+          {toys.map((toy) => (
             <ToyCard key={toy.toyId} toy={toy}></ToyCard>
           ))}
-        </div>
-        {/* Show All Button */}
-        <div className="flex justify-center my-6">
-          <Link to={"all-toys"} className="mx-auto btn btn-primary btn-outline">
-            Show All
-          </Link>
         </div>
       </div>
     </section>
   );
 };
 
-export default AllToys;
+export default AllToy;
